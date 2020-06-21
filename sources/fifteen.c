@@ -14,6 +14,7 @@ compile with -lncurses
 #include <limits.h>
 #include <time.h>
 #include <signal.h>
+#include <stdint.h>
 typedef /*signed char*/ uint8_t byte;
 
 /* The Plan9 compiler can not handle VLAs */
