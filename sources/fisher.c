@@ -23,7 +23,7 @@ typedef signed char byte;
 #ifdef Plan9
 int usleep(long usec) {
     int second = usec/1000000;
-    long nano = usec*1000 - second*1000000;
+    long nano = usec*1000 - second*1000000000;
     struct timespec sleepy = {0};
     sleepy.tv_sec = second;
     sleepy.tv_nsec = nano;
